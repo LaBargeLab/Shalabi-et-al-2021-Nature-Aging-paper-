@@ -1,3 +1,10 @@
 # Shalabi-et-al-2021-Nature-Aging-paper-
 
-This is the code that I used for analyzing the RNA seq data discussed in the paper. 
+This resource provides the R code to reproduce key results described in our paper; link XXXX
+
+The analysis here is divided into three main files:
+- The first describes the differntial gene expression analysis
+- The second describes the gene set enrichment analysis described in the paper
+- the thrid describes the gene list overlap analysis
+
+For questions, please contact sshalabi@coh.org 
