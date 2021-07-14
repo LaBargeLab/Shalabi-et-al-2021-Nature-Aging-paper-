@@ -3,6 +3,8 @@
 directory <- 'Data'
 setwd(directory)
 
+### Load sample data and count data from the link we deposited our data at: XXXXX 
+
 ShalabiRNASeq_LEP.MEP.sampleData<- data.frame(read.csv("ShalabiRNASeq_LEP.MEP.sampleData.csv"))
 load(file=file.path(getwd(), 'ShalabiRNASeq_LEP.MEP.countData.RData'))
 
