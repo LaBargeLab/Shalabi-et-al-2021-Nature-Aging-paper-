@@ -20,6 +20,9 @@ write.csv("res05_genesymb_for_gsea.csv")
 df = read.csv("res05_genesymb_for_gsea.csv", header=TRUE)
 df <- na.omit(df)
 ####need to vonvert into a vector 
+
+###df <- subset(df,padj<0.05)
+###subset <0.05 for gene over-representation analysis. don't subset for GSEA 
 rownames(df) <- df$X
 original_gene_list <- as.vector(df$log2FoldChange)
 names(original_gene_list) <- df$X
