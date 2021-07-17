@@ -1,6 +1,6 @@
 #### This file provides the code that was used to plot the waterfall plot in figure 1 in the paper 
 ### after computing the ratio of the AND mask percent area to the KRT19 mask percent area (% of LEps expressing KRT14)
-### This info is provided in supplementarry table 13
+### This info is provided in source data file related to figure 1. 
 
 ### The rest of the panles in Figure 1 were produced in GraphPad Prism 8.3.0.
 
