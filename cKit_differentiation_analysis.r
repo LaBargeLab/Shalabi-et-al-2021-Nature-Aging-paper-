@@ -2,7 +2,7 @@
 ### This file provides the R code for producing the results in the cKit progenitor differentiation assays.
 
 ### Load file of the quantified mean KRT19 and KRT14 signals from the fixed and stained cKit progenitor cells at 2 or 7 days. 
-### This file is provided in supplementary table 14
+### This file is provided as a source data file for figure 3. 
 
 ###set working directroy 
 ### load output file from CellProfiler 
