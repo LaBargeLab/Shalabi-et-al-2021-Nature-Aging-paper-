@@ -14,6 +14,12 @@ library(ggpointdensity)
 library(ggplot2)
 library(dplyr)
 
+#subset data by taking out empty images, false positive cells (small area, no intensity)
+Data = subset(Data, 
+                 Intensity_MeanIntensity_K19 > 0 &
+                 Intensity_MeanIntensity_K14 > 0  );
+###The file provided was saved after this step 
+
 ###### To draw histograms 
 library(scales)
 Data$norm_K19 <- rescale(Data$Intensity_MeanIntensity_K19)
