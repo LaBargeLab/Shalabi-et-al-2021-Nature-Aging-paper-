@@ -60,24 +60,24 @@ keep <- rowSums(counts(ddsFullCountTable)) >= 10
 dds <- ddsFullCountTable[keep,]
 
 
-###### Now do the differntial gene expression analysis between HR and AR LEPs 
+###### Now do the differential gene expression analysis between HR and AR LEPs 
 ###########by default alpha or false discovery rate or adjusted p values is set to 0.1, so adjust alpha to 0.05 
 
 res05 <- results(dds, contrast=c("CellType.Risk","LEP.High Risk", "LEP.Normal Risk"), alpha=0.05)
 summary(res05)
 res05
 
-#### what is the number of differntially expressed genes with an adjusted p value <0.05?
+#### what is the number of differentially expressed genes with an adjusted p value <0.05?
 sum(res05$padj < 0.05, na.rm=TRUE)
 
 ####save that list in the same directory or change the directory to the results folder 
 DE1 <- subset(res05, res05$padj < 0.05)
 write.csv(DE1, "DEgenes_LEPs_HR_VS_NR_res05_padj0.05.csv") 
 
-### how many differntially expressed genes are with a log2 foldchange of 1 and -1 
+### how many differentially expressed genes are with a log2 foldchange of 1 and -1 
 sum(DE1$log2FoldChange>=1 | DE1$log2FoldChange<=-1)
 
-###### to draw a volcano plot for the differnially expresed genes 
+###### to draw a volcano plot for the differentially expressed genes 
 ###
 #### load the needed packages 
 library(ggplot2)
