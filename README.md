@@ -3,8 +3,8 @@
 This resource provides the R code to reproduce key results described in our paper; link XXXX
 
 The analysis here is divided into three main files:
-- The first describes the differntial gene expression analysis
+- The first describes the differential gene expression analysis
 - The second describes the gene set enrichment analysis described in the paper
-- the thrid describes the gene list overlap analysis
+- The third describes the gene list overlap analysis
 
 For questions, please contact sshalabi@coh.org 
