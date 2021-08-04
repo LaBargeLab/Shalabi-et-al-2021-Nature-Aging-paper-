@@ -4,7 +4,7 @@
 ### Load file of the quantified mean KRT19 and KRT14 signals from the fixed and stained cKit progenitor cells at 2 or 7 days. 
 ### This file is provided as a source data file for figure 3. 
 
-###set working directroy 
+###set working directory 
 ### load output file from CellProfiler 
 
 Data <- data.frame(read.csv("ckit_analysis_final_07_14_2021.csv"))
